@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Chat</title>
+    <link href="style.css" rel="stylesheet" />
+
+    <script src="node_modules/@microsoft/signalr/dist/browser/signalr.min.js"></script>
+    <script src="app.js" defer></script>
+
+</head>
+
+<body>
+<div class="chat-container">
+    <div class="chat-header">Custom ChatGPT <span id="connectionId"></span></div>
+    <div class="chat-box" id="chat-box"></div>
+    <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Mesajınızı yazın...">
+        <button onclick="sendPrompt()">Gönder</button>
+    </div>
+</div>
+
+</body>
+
+</html>

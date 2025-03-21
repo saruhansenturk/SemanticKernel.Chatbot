@@ -1,0 +1,116 @@
+﻿﻿body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.chat-container {
+    width: 800px;
+    height: 750px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chat-header {
+    background: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.chat-box {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #007bff #ddd;
+}
+
+    .chat-box::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .chat-box::-webkit-scrollbar-thumb {
+        background-color: #007bff;
+        border-radius: 4px;
+    }
+
+    .chat-box::-webkit-scrollbar-track {
+        background: #ddd;
+    }
+
+/* Kullanıcının mesajı (sağa yaslı, mavi) */
+.user-message {
+    align-self: flex-end;
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 60%;
+    word-wrap: break-word;
+}
+
+/* Karşı tarafın mesajı (sola yaslı, gri) */
+.other-message {
+    align-self: flex-start;
+    background: #e0e0e0;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 60%;
+    word-wrap: break-word;
+}
+
+.chat-input {
+    display: flex;
+    border-top: 1px solid #ddd;
+    padding: 15px;
+    background: #f9f9f9;
+}
+
+    .chat-input input {
+        flex: 1;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        outline: none;
+    }
+
+    .chat-input button {
+        padding: 12px 20px;
+        border: none;
+        background: #007bff;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        margin-left: 10px;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+
+        .chat-input button:hover {
+            background: #0056b3;
+        }
+
+#connectionId {
+    font-size: 14px;
+    text-align: center;
+    padding: 5px;
+}
