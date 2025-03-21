@@ -18,7 +18,7 @@ builder.Services.AddOpenApi();
 builder.Services.AddOpenAIChatCompletion(
     modelId: "qwen/qwq-32b:free",
     openAIClient: new OpenAIClient(
-        credential: new ApiKeyCredential("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"),
+        credential: new ApiKeyCredential("API_KEY"),
         options: new OpenAIClientOptions
         {
             Endpoint = new Uri("https://openrouter.ai/api/v1")
